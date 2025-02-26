@@ -1,0 +1,40 @@
+h1 {
+    color: blue;
+    font-size: 30px;
+    background-color: violet;}
+
+img {width: 100%;height: width;}
+#nombre{
+    color:brown;
+    font-size: 40px;
+}
+
+.subtitulo{
+    color: red;
+    background-image:url(elmascapito.jpg);
+}
+
+.grid-container{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 10px;
+}
+.item1{
+    width: 30%;
+    padding: 20%;
+    background-color: lightgreen;
+}
+.item2{
+    width: 70%;
+    padding: 20%;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 600px){
+    .contenedor{
+        flex-direction: column;
+    }
+}
