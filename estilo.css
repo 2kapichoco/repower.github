@@ -1,40 +1,83 @@
-h1 {
-    color: blue;
-    font-size: 30px;
-    background-color: violet;}
-
-img {width: 100%;height: width;}
-#nombre{
-    color:brown;
-    font-size: 40px;
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.subtitulo{
-    color: red;
-    background-image:url(elmascapito.jpg);
+header{
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.grid-container{
-   display: grid;
-   grid-template-columns: auto auto auto;
-   gap: 10px;
+nav ul{
+    list-style: none;
+    padding: 0;
 }
-.item1{
-    width: 30%;
-    padding: 20%;
-    background-color: lightgreen;
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
 }
-.item2{
-    width: 70%;
-    padding: 20%;
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
 }
-.contenedor{
+
+#about{
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+#about h2{
+    margin-top: 0;
+}
+
+.gallery{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-@media(max-width: 600px){
-    .contenedor{
-        flex-direction: column;
-    }
+.project{
+    width: 300px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.project img{
+    max-width: 100%;
+    height: auto;
+}
+
+#contact{
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input, form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input[type="submit"]{
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }

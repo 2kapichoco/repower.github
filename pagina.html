@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio personal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+    <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre mi</h2>
+        <p>Hola, soy oliver, un desarrollador web apasionado por crear soluciones</p>
+    </section>
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quo modi blanditiis alias non corporis reiciendis laboriosam itaque facilis soluta cupiditate debitis, labore nemo praesentium consectetur quas fugit tempora nihil.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum incidunt enim distinctio iste, odit dolorum. Iusto necessitatibus voluptatem error! Id ut itaque, dolore quod reprehenderit officiis dolorum. Tempora, unde.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15836.425774459452!2d-73.12093410000001!3d7.113662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fda29de85d9%3A0x307c520ff61a2c2a!2sHomecenter%20%7C%20Bucaramanga!5e0!3m2!1ses-419!2sco!4v1740622283815!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="/submit" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
